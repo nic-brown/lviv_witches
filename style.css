@@ -1,45 +1,173 @@
 * {
-  box-sizing: border-box;
-  padding: 0;
   margin: 0;
-}
-body {
+  padding: 0;
   font-family: "Lato", sans-serif;
-  font-weight: 700;
-  font-style: normal;
-  font-weight: 400;
-  background: url(img.jpg) no-repeat center center / cover;
-  color: #fff;
+
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
-/*
-font-weight: 300;
-font-weight: 700;
-font-weight: 900;
-*/
+
+body {
+  background: url(img.jpg) no-repeat center center / cover;
+  color: white;
+  font-weight: 900;
+}
+
 h2 {
-  font-size: 60px;
+  font-size: 50px;
   font-weight: 900;
   text-transform: uppercase;
-  margin-bottom: 40px;
+  margin-bottom: 10px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5), -2px -2px 4px rgba(0, 0, 0, 0.5), 0 0 10px rgba(0, 0, 0, 0.5)
 }
-.coming-soon {
+
+h3 {
+  position: absolute;
+  /* top: 100%; */
+  margin-top: 20px;
+  width: 100%;
+  left: 0;
+  color: #333;
+  font-size: 30px;
+  position: absolute;
+  bottom: 0;
+  /* margin-top: 20px; */
+  width: 100%;
+
+  left: 0;
+  letter-spacing: 2px;
+  color: #fff;
+  font-size: 42px;
+  font-weight: 700;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5), -2px -2px 4px rgba(0, 0, 0, 0.5), 0 0 10px rgba(0, 0, 0, 0.5)
+}
+
+/*=================
+* TIMER
+*=================*/
+.timer {
   height: 100vh;
-  text-align: center;
   backdrop-filter: blur(5px);
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-}
-.countdown {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  font-size: 30px;
-  gap: 60px;
+
+
+  left: 0;
+  text-align: center;
+
+
+  color: white;
 }
 
-.countdown-title {
-  font-size: 80px;
-  font-weight: 900;
+.hidden {
+
+  display: none;
+}
+
+.timer * {
+  cursor: default;
+}
+
+
+
+.timer--clock {
+  width: 100%;
+  position: relative;
+
+  margin-top: 22px;
+
+  display: flex;
+  justify-content: center;
+}
+
+.timer--clock .clock-display-grp {
+  display: flex;
+  position: relative;
+  padding-bottom: 70px;
+}
+
+.timer--clock .clock-display-grp .number-grp {
+
+  width: auto;
+  /* display: block; */
+  height: 156px;
+  /* float: left; */
+  overflow: hidden;
+}
+
+.timer--clock .clock-display-grp .number-grp .number-grp-wrp {
+  width: 100%;
+  position: relative;
+}
+
+.timer--clock .clock-display-grp .number-grp .number-grp-wrp .num {
+  width: 100%;
+  position: relative;
+  height: 156px;
+}
+
+.timer--clock .clock-display-grp .number-grp .number-grp-wrp .num p {
+  width: auto;
+  display: table;
+  font-size: 205px;
+  line-height: 150px;
+
+}
+
+.timer--clock .clock-separator {
+  width: auto;
+  float: left;
+  display: block;
+  height: 156px;
+}
+
+.timer--clock .clock-separator p {
+  width: auto;
+  display: table;
+  font-size: 205px;
+  line-height: 150px;
+  font-weight: bold;
+}
+
+
+
+.reload {
+  width: 125px;
+  height: 14px;
+  position: absolute;
+  bottom: 50vh;
+  left: 50%;
+  margin-left: -62.5px;
+  opacity: 0;
+  display: none;
+  cursor: pointer;
+  z-index: 9999;
+}
+
+.reload:hover svg path {
+  fill: #666666;
+}
+
+.reload:hover p {
+  color: #666666;
+}
+
+.reload svg {
+  width: 12px;
+  height: 12px;
+  float: left;
+  margin-right: 10px;
+}
+
+.reload p {
+  color: #2b2b2b;
+  font-size: 12px;
+  float: left;
+  line-height: 11px;
 }
