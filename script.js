@@ -45,6 +45,7 @@ function initTimer(t) {
 
   function updateTimer() {
     const countDate = new Date("March 30, 2024 16:00:00").getTime();
+    // const countDate = new Date("March 30, 2024 16:00:00").getTime();
     const now = new Date().getTime();
     const gap = countDate - now;
     //How the fuck does time work?
@@ -137,20 +138,26 @@ function initTimer(t) {
       textTitleHour.innerHTML = "годин";
     }
 
-    if ([111, 211, 311].includes(textDay)) {
+
+    console.log('textDay: ' + textDay);
+    if ([11, 111, 211, 311].includes(textDay)) {
       // лише 24 години в одному дні, тому масив такий короткий
       textTitleDay.innerHTML = "днів";
+      console.log('умова 1');
       //
     } else if (convertPlural(dayArr) == 1) {
       textTitleDay.innerHTML = "день";
+      console.log('умова 2 ' + convertPlural(dayArr));
     } else if (
       (convertPlural(dayArr) == 2 && dayArr != 12) ||
       (convertPlural(dayArr) == 3 && dayArr != 13) ||
       (convertPlural(dayArr) == 4 && dayArr != 14)
     ) {
       textTitleDay.innerHTML = "дні";
+      console.log('умова 3');
     } else {
       textTitleDay.innerHTML = "днів";
+      console.log('умова 4');
     }
     // time.day = ;
     // time.hour = tempsplit[0];

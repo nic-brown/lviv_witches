@@ -1,398 +1,397 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <title>CodePen - Javascript Countdown</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap"
-      rel="stylesheet"
-    />
-    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css"> -->
 
-    <link rel="stylesheet" href="./style.css" />
-  </head>
+<head>
+  <meta charset="UTF-8" />
+  <title>CodePen - Javascript Countdown</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet" />
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css"> -->
 
-  <body>
-    <div class="loading-container">
-      <div class="loading-screen">
-        <div class="rounded-div-wrap top">
-          <div class="rounded-div"></div>
-        </div>
-        <div class="loading-words">
-          <h2 class="home-active home-active-first">
-            Привіт
-            <!-- <div class="dot"></div> -->
-          </h2>
-          <h2 class="home-active">
-            Анька
-            <!-- <div class="dot"></div> -->
-          </h2>
-          <h2 class="home-active">
-            ТИ
-            <!-- <div class="dot"></div> -->
-          </h2>
-          <h2 class="home-active">
-            прекрасна
-            <!-- <div class="dot"></div> -->
-          </h2>
-          <h2 class="home-active">чому?</h2>
-          <h2 class="home-active">причина</h2>
-          <h2 class="home-active">проста</h2>
-          <h2 class="home-active">ТИ</h2>
-          <h2 class="home-active">є</h2>
-          <h2 class="home-active-last">МОЯ</h2>
-        </div>
-        <div class="rounded-div-wrap bottom">
-          <div class="rounded-div"></div>
-        </div>
+  <link rel="stylesheet" href="./style.css?v=0.2" />
+</head>
+
+<body>
+  <div class="loading-container">
+    <div class="loading-screen">
+      <div class="rounded-div-wrap top">
+        <div class="rounded-div"></div>
+      </div>
+      <div class="loading-words">
+        <h2 class="home-active home-active-first">
+          Привіт
+
+        </h2>
+        <h2 class="home-active">
+          Анька
+
+        </h2>
+        <h2 class="home-active">
+          ТИ
+
+        </h2>
+        <h2 class="home-active">
+          прекрасна
+
+        </h2>
+        <h2 class="home-active">чому?</h2>
+        <h2 class="home-active">причина</h2>
+        <h2 class="home-active">проста</h2>
+        <h2 class="home-active">ТИ</h2>
+        <h2 class="home-active">є</h2>
+        <h2 class="home-active-last">МОЯ</h2>
+      </div>
+      <div class="rounded-div-wrap bottom">
+        <div class="rounded-div"></div>
       </div>
     </div>
+  </div>
 
-    <!-- partial:index.partial.html -->
-    <div class="timer">
-      <h2>
-        відлік часу до початку вистави <br />
-        «львівська ВІДЬМА»
-      </h2>
-      <div class="timer--clock">
-        <div class="days-group clock-display-grp">
-          <div class="first number-grp">
-            <div class="number-grp-wrp">
-              <div class="num num-0">
-                <p>0</p>
-              </div>
-              <div class="num num-1">
-                <p>1</p>
-              </div>
-              <div class="num num-2">
-                <p>2</p>
-              </div>
-              <div class="num num-3">
-                <p>3</p>
-              </div>
-              <div class="num num-4">
-                <p>4</p>
-              </div>
-              <div class="num num-5">
-                <p>5</p>
-              </div>
-              <div class="num num-6">
-                <p>6</p>
-              </div>
-              <div class="num num-7">
-                <p>7</p>
-              </div>
-              <div class="num num-8">
-                <p>8</p>
-              </div>
-              <div class="num num-9">
-                <p>9</p>
-              </div>
+
+  <div class="timer">
+    <h2>
+      відлік часу до початку вистави <br />
+      «львівська ВІДЬМА»
+    </h2>
+    <div class="timer--clock">
+      <div class="days-group clock-display-grp">
+        <div class="first number-grp">
+          <div class="number-grp-wrp">
+            <div class="num num-0">
+              <p>0</p>
+            </div>
+            <div class="num num-1">
+              <p>1</p>
+            </div>
+            <div class="num num-2">
+              <p>2</p>
+            </div>
+            <div class="num num-3">
+              <p>3</p>
+            </div>
+            <div class="num num-4">
+              <p>4</p>
+            </div>
+            <div class="num num-5">
+              <p>5</p>
+            </div>
+            <div class="num num-6">
+              <p>6</p>
+            </div>
+            <div class="num num-7">
+              <p>7</p>
+            </div>
+            <div class="num num-8">
+              <p>8</p>
+            </div>
+            <div class="num num-9">
+              <p>9</p>
             </div>
           </div>
-          <div class="second number-grp">
-            <div class="number-grp-wrp">
-              <div class="num num-0">
-                <p>0</p>
-              </div>
-              <div class="num num-1">
-                <p>1</p>
-              </div>
-              <div class="num num-2">
-                <p>2</p>
-              </div>
-              <div class="num num-3">
-                <p>3</p>
-              </div>
-              <div class="num num-4">
-                <p>4</p>
-              </div>
-              <div class="num num-5">
-                <p>5</p>
-              </div>
-              <div class="num num-6">
-                <p>6</p>
-              </div>
-              <div class="num num-7">
-                <p>7</p>
-              </div>
-              <div class="num num-8">
-                <p>8</p>
-              </div>
-              <div class="num num-9">
-                <p>9</p>
-              </div>
-            </div>
-          </div>
-          <div class="third number-grp">
-            <div class="number-grp-wrp">
-              <div class="num num-0">
-                <p>0</p>
-              </div>
-              <div class="num num-1">
-                <p>1</p>
-              </div>
-              <div class="num num-2">
-                <p>2</p>
-              </div>
-              <div class="num num-3">
-                <p>3</p>
-              </div>
-              <div class="num num-4">
-                <p>4</p>
-              </div>
-              <div class="num num-5">
-                <p>5</p>
-              </div>
-              <div class="num num-6">
-                <p>6</p>
-              </div>
-              <div class="num num-7">
-                <p>7</p>
-              </div>
-              <div class="num num-8">
-                <p>8</p>
-              </div>
-              <div class="num num-9">
-                <p>9</p>
-              </div>
-            </div>
-          </div>
-          <h3 class="countdown-text-day"></h3>
         </div>
-        <div class="clock-separator">
-          <p>:</p>
-        </div>
-        <div class="hours-group clock-display-grp">
-          <div class="first number-grp">
-            <div class="number-grp-wrp">
-              <div class="num num-0">
-                <p>0</p>
-              </div>
-              <div class="num num-1">
-                <p>1</p>
-              </div>
-              <div class="num num-2">
-                <p>2</p>
-              </div>
-              <div class="num num-3">
-                <p>3</p>
-              </div>
-              <div class="num num-4">
-                <p>4</p>
-              </div>
-              <div class="num num-5">
-                <p>5</p>
-              </div>
-              <div class="num num-6">
-                <p>6</p>
-              </div>
-              <div class="num num-7">
-                <p>7</p>
-              </div>
-              <div class="num num-8">
-                <p>8</p>
-              </div>
-              <div class="num num-9">
-                <p>9</p>
-              </div>
+        <div class="second number-grp">
+          <div class="number-grp-wrp">
+            <div class="num num-0">
+              <p>0</p>
+            </div>
+            <div class="num num-1">
+              <p>1</p>
+            </div>
+            <div class="num num-2">
+              <p>2</p>
+            </div>
+            <div class="num num-3">
+              <p>3</p>
+            </div>
+            <div class="num num-4">
+              <p>4</p>
+            </div>
+            <div class="num num-5">
+              <p>5</p>
+            </div>
+            <div class="num num-6">
+              <p>6</p>
+            </div>
+            <div class="num num-7">
+              <p>7</p>
+            </div>
+            <div class="num num-8">
+              <p>8</p>
+            </div>
+            <div class="num num-9">
+              <p>9</p>
             </div>
           </div>
-          <div class="second number-grp">
-            <div class="number-grp-wrp">
-              <div class="num num-0">
-                <p>0</p>
-              </div>
-              <div class="num num-1">
-                <p>1</p>
-              </div>
-              <div class="num num-2">
-                <p>2</p>
-              </div>
-              <div class="num num-3">
-                <p>3</p>
-              </div>
-              <div class="num num-4">
-                <p>4</p>
-              </div>
-              <div class="num num-5">
-                <p>5</p>
-              </div>
-              <div class="num num-6">
-                <p>6</p>
-              </div>
-              <div class="num num-7">
-                <p>7</p>
-              </div>
-              <div class="num num-8">
-                <p>8</p>
-              </div>
-              <div class="num num-9">
-                <p>9</p>
-              </div>
+        </div>
+        <div class="third number-grp">
+          <div class="number-grp-wrp">
+            <div class="num num-0">
+              <p>0</p>
+            </div>
+            <div class="num num-1">
+              <p>1</p>
+            </div>
+            <div class="num num-2">
+              <p>2</p>
+            </div>
+            <div class="num num-3">
+              <p>3</p>
+            </div>
+            <div class="num num-4">
+              <p>4</p>
+            </div>
+            <div class="num num-5">
+              <p>5</p>
+            </div>
+            <div class="num num-6">
+              <p>6</p>
+            </div>
+            <div class="num num-7">
+              <p>7</p>
+            </div>
+            <div class="num num-8">
+              <p>8</p>
+            </div>
+            <div class="num num-9">
+              <p>9</p>
             </div>
           </div>
-          <h3 class="countdown-text-hour"></h3>
         </div>
-        <div class="clock-separator">
-          <p>:</p>
-        </div>
-        <div class="minutes-group clock-display-grp">
-          <div class="first number-grp">
-            <div class="number-grp-wrp">
-              <div class="num num-0">
-                <p>0</p>
-              </div>
-              <div class="num num-1">
-                <p>1</p>
-              </div>
-              <div class="num num-2">
-                <p>2</p>
-              </div>
-              <div class="num num-3">
-                <p>3</p>
-              </div>
-              <div class="num num-4">
-                <p>4</p>
-              </div>
-              <div class="num num-5">
-                <p>5</p>
-              </div>
-              <div class="num num-6">
-                <p>6</p>
-              </div>
-              <div class="num num-7">
-                <p>7</p>
-              </div>
-              <div class="num num-8">
-                <p>8</p>
-              </div>
-              <div class="num num-9">
-                <p>9</p>
-              </div>
+        <h3 class="countdown-text-day"></h3>
+      </div>
+      <div class="clock-separator">
+        <p>:</p>
+      </div>
+      <div class="hours-group clock-display-grp">
+        <div class="first number-grp">
+          <div class="number-grp-wrp">
+            <div class="num num-0">
+              <p>0</p>
+            </div>
+            <div class="num num-1">
+              <p>1</p>
+            </div>
+            <div class="num num-2">
+              <p>2</p>
+            </div>
+            <div class="num num-3">
+              <p>3</p>
+            </div>
+            <div class="num num-4">
+              <p>4</p>
+            </div>
+            <div class="num num-5">
+              <p>5</p>
+            </div>
+            <div class="num num-6">
+              <p>6</p>
+            </div>
+            <div class="num num-7">
+              <p>7</p>
+            </div>
+            <div class="num num-8">
+              <p>8</p>
+            </div>
+            <div class="num num-9">
+              <p>9</p>
             </div>
           </div>
-          <div class="second number-grp">
-            <div class="number-grp-wrp">
-              <div class="num num-0">
-                <p>0</p>
-              </div>
-              <div class="num num-1">
-                <p>1</p>
-              </div>
-              <div class="num num-2">
-                <p>2</p>
-              </div>
-              <div class="num num-3">
-                <p>3</p>
-              </div>
-              <div class="num num-4">
-                <p>4</p>
-              </div>
-              <div class="num num-5">
-                <p>5</p>
-              </div>
-              <div class="num num-6">
-                <p>6</p>
-              </div>
-              <div class="num num-7">
-                <p>7</p>
-              </div>
-              <div class="num num-8">
-                <p>8</p>
-              </div>
-              <div class="num num-9">
-                <p>9</p>
-              </div>
+        </div>
+        <div class="second number-grp">
+          <div class="number-grp-wrp">
+            <div class="num num-0">
+              <p>0</p>
+            </div>
+            <div class="num num-1">
+              <p>1</p>
+            </div>
+            <div class="num num-2">
+              <p>2</p>
+            </div>
+            <div class="num num-3">
+              <p>3</p>
+            </div>
+            <div class="num num-4">
+              <p>4</p>
+            </div>
+            <div class="num num-5">
+              <p>5</p>
+            </div>
+            <div class="num num-6">
+              <p>6</p>
+            </div>
+            <div class="num num-7">
+              <p>7</p>
+            </div>
+            <div class="num num-8">
+              <p>8</p>
+            </div>
+            <div class="num num-9">
+              <p>9</p>
             </div>
           </div>
-          <h3 class="countdown-text-minute"></h3>
         </div>
-        <div class="clock-separator">
-          <p>:</p>
-        </div>
-        <div class="seconds-group clock-display-grp">
-          <div class="first number-grp">
-            <div class="number-grp-wrp">
-              <div class="num num-0">
-                <p>0</p>
-              </div>
-              <div class="num num-1">
-                <p>1</p>
-              </div>
-              <div class="num num-2">
-                <p>2</p>
-              </div>
-              <div class="num num-3">
-                <p>3</p>
-              </div>
-              <div class="num num-4">
-                <p>4</p>
-              </div>
-              <div class="num num-5">
-                <p>5</p>
-              </div>
-              <div class="num num-6">
-                <p>6</p>
-              </div>
-              <div class="num num-7">
-                <p>7</p>
-              </div>
-              <div class="num num-8">
-                <p>8</p>
-              </div>
-              <div class="num num-9">
-                <p>9</p>
-              </div>
+        <h3 class="countdown-text-hour"></h3>
+      </div>
+      <div class="clock-separator">
+        <p>:</p>
+      </div>
+      <div class="minutes-group clock-display-grp">
+        <div class="first number-grp">
+          <div class="number-grp-wrp">
+            <div class="num num-0">
+              <p>0</p>
+            </div>
+            <div class="num num-1">
+              <p>1</p>
+            </div>
+            <div class="num num-2">
+              <p>2</p>
+            </div>
+            <div class="num num-3">
+              <p>3</p>
+            </div>
+            <div class="num num-4">
+              <p>4</p>
+            </div>
+            <div class="num num-5">
+              <p>5</p>
+            </div>
+            <div class="num num-6">
+              <p>6</p>
+            </div>
+            <div class="num num-7">
+              <p>7</p>
+            </div>
+            <div class="num num-8">
+              <p>8</p>
+            </div>
+            <div class="num num-9">
+              <p>9</p>
             </div>
           </div>
-          <div class="second number-grp">
-            <div class="number-grp-wrp">
-              <div class="num num-0">
-                <p>0</p>
-              </div>
-              <div class="num num-1">
-                <p>1</p>
-              </div>
-              <div class="num num-2">
-                <p>2</p>
-              </div>
-              <div class="num num-3">
-                <p>3</p>
-              </div>
-              <div class="num num-4">
-                <p>4</p>
-              </div>
-              <div class="num num-5">
-                <p>5</p>
-              </div>
-              <div class="num num-6">
-                <p>6</p>
-              </div>
-              <div class="num num-7">
-                <p>7</p>
-              </div>
-              <div class="num num-8">
-                <p>8</p>
-              </div>
-              <div class="num num-9">
-                <p>9</p>
-              </div>
+        </div>
+        <div class="second number-grp">
+          <div class="number-grp-wrp">
+            <div class="num num-0">
+              <p>0</p>
+            </div>
+            <div class="num num-1">
+              <p>1</p>
+            </div>
+            <div class="num num-2">
+              <p>2</p>
+            </div>
+            <div class="num num-3">
+              <p>3</p>
+            </div>
+            <div class="num num-4">
+              <p>4</p>
+            </div>
+            <div class="num num-5">
+              <p>5</p>
+            </div>
+            <div class="num num-6">
+              <p>6</p>
+            </div>
+            <div class="num num-7">
+              <p>7</p>
+            </div>
+            <div class="num num-8">
+              <p>8</p>
+            </div>
+            <div class="num num-9">
+              <p>9</p>
             </div>
           </div>
-          <h3 class="countdown-text-second"></h3>
         </div>
+        <h3 class="countdown-text-minute"></h3>
+      </div>
+      <div class="clock-separator">
+        <p>:</p>
+      </div>
+      <div class="seconds-group clock-display-grp">
+        <div class="first number-grp">
+          <div class="number-grp-wrp">
+            <div class="num num-0">
+              <p>0</p>
+            </div>
+            <div class="num num-1">
+              <p>1</p>
+            </div>
+            <div class="num num-2">
+              <p>2</p>
+            </div>
+            <div class="num num-3">
+              <p>3</p>
+            </div>
+            <div class="num num-4">
+              <p>4</p>
+            </div>
+            <div class="num num-5">
+              <p>5</p>
+            </div>
+            <div class="num num-6">
+              <p>6</p>
+            </div>
+            <div class="num num-7">
+              <p>7</p>
+            </div>
+            <div class="num num-8">
+              <p>8</p>
+            </div>
+            <div class="num num-9">
+              <p>9</p>
+            </div>
+          </div>
+        </div>
+        <div class="second number-grp">
+          <div class="number-grp-wrp">
+            <div class="num num-0">
+              <p>0</p>
+            </div>
+            <div class="num num-1">
+              <p>1</p>
+            </div>
+            <div class="num num-2">
+              <p>2</p>
+            </div>
+            <div class="num num-3">
+              <p>3</p>
+            </div>
+            <div class="num num-4">
+              <p>4</p>
+            </div>
+            <div class="num num-5">
+              <p>5</p>
+            </div>
+            <div class="num num-6">
+              <p>6</p>
+            </div>
+            <div class="num num-7">
+              <p>7</p>
+            </div>
+            <div class="num num-8">
+              <p>8</p>
+            </div>
+            <div class="num num-9">
+              <p>9</p>
+            </div>
+          </div>
+        </div>
+        <h3 class="countdown-text-second"></h3>
       </div>
     </div>
+  </div>
 
-    <!-- partial -->
-    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <!-- partial -->
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js"></script>
 
-    <script src="./script.js"></script>
-  </body>
+  <script src="./script.js?v=0.2"></script>
+</body>
+
 </html>

@@ -17,6 +17,7 @@ body {
   font-weight: 900;
   overflow: hidden;
 }
+
 .loading-words h2 {
   font-size: 80px;
   font-weight: 700;
@@ -71,6 +72,7 @@ body {
 
   color: white;
 }
+
 .timer:after,
 .timer:before {
   content: "";
@@ -113,6 +115,7 @@ body {
     transform: translateX(-2000px) rotate(45deg);
   }
 }
+
 @keyframes slide_right {
   100% {
     transform: translateX(2000px) rotate(45deg);
@@ -272,4 +275,45 @@ body {
 .loading-container .loading-words .home-active-last {
   opacity: 0;
   display: none;
+}
+
+@media screen and (max-width:576px) {
+  .timer h2 {
+    font-size: 36px;
+    padding: 0 20px;
+  }
+
+  .loading-words h2 {
+    font-size: 54px;
+  }
+
+  .timer--clock .clock-display-grp .number-grp .number-grp-wrp .num p {
+
+    font-size: 52px;
+    line-height: normal;
+  }
+
+  .timer--clock .clock-separator p {
+    font-size: 52px;
+    line-height: normal;
+
+  }
+
+  .timer--clock .clock-display-grp .number-grp,
+  .timer--clock .clock-display-grp .number-grp .number-grp-wrp .num {
+    height: 55px;
+  }
+
+  .timer h3 {
+    font-size: 13px;
+    bottom: 84px;
+  }
+
+  .timer--clock .clock-display-grp {
+    padding-bottom: 0;
+  }
+
+  .timer--clock {
+    margin-top: 0;
+  }
 }
